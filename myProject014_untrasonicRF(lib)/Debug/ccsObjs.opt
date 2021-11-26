@@ -1,0 +1,1 @@
+"./LCD_MSP430.obj" "./main.obj" "../lnk_msp430f5529.cmd" -llibmath.a -lmyUartLibrary.lib -llibc.a 

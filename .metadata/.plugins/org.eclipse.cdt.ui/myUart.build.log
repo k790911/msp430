@@ -1,0 +1,21 @@
+
+**** Build of configuration Debug for project myUart ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-msp430_20.2.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1020/ccs/ccs_base/msp430/include" --include_path="C:/Users/cruis/workspace_v10/myUart" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-msp430_20.2.4.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 5: remark #1528-D: (ULP 3.1) Detected flag polling using UCBUSY. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 16: remark #1532-D: (ULP 5.3) Detected sprintf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../main.c"
+ 
+Building target: "myUart.lib"
+Invoking: MSP430 Archiver
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-msp430_20.2.4.LTS/bin/ar430" r "myUart.lib" "./main.obj" 
+  ==>  new archive 'myUart.lib'
+  ==>  building archive 'myUart.lib'
+Finished building target: "myUart.lib"
+ 
+
+**** Build Finished ****
